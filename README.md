@@ -23,3 +23,16 @@ Present a report of what cryptocurrencies are on the trading market and how cryp
 
 - The csv format data resource (/Resources/crypto_data.csv)
 
+## Codes
+
+- [Jupyter_Notebook](/crypto_PCA_kmeans.ipynb) 
+
+- [Python](/crypto_PCA_kmeans.py)
+
+### Results
+
+- ![Elbow_curve](/Elbow_curve.PNG)
+
+- ![2d_scatter_plot](/2d_scatter_plot.PNG)
+
+- ![3d_scatter_plot](/3d_scatter_plot.PNG)
