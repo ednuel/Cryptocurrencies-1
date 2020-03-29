@@ -86,7 +86,7 @@ pcs_df.head(10)
 # %%
 # Create an elbow curve to find the best value for K, X-axis is K, y-axis is inertia
 inertia_list = list()
-k_value = list(range(1,16))
+k_value = list(range(1,11))
 
 for k in k_value:
     k_model = KMeans(n_clusters=k, random_state=1)
@@ -101,8 +101,8 @@ obj = elbow_df.hvplot.line(x = 'K', y = 'Inertia', xticks = k_value, title='Elbo
 hvplot.show(obj)
 
 # %% [markdown]
-# Based on the elbow curve, at the point 5, the line shifts to a strong horizontal line.
-# As a result, I chosed K=5 as the best estimate number of cluster in KMeans model.
+# Based on the elbow curve, at the point 4, the line shifts to a strong horizontal line.
+# As a result, I chosed K=4 as the best estimate number of cluster in KMeans model.
 
 # %%
 # run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data
